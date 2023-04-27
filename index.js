@@ -6,6 +6,7 @@ const response = await fetch(
 );
 const data = await response.text();
 const body = await parser.parse(data).querySelectorAll('img');
+console.log(body);
 
 const downloadImage = async (url, path) => {
   const response1 = await fetch(url);
@@ -17,10 +18,9 @@ const downloadImage = async (url, path) => {
 
 for (let i = 0; i <= 9; i++) {
   const images = body[i].getAttribute('src');
-  console.log(images);
-}
 
-await downloadImage(
-  'https://api.memegen.link/images/bad/your_meme_is_bad/and_you_should_feel_bad.jpg',
-  './memes/02.jpg',
-);
+  const number = 0;
+  console.log(images);
+
+  await downloadImage(images, `./memes/0 ${number + i}.jpg`);
+}
