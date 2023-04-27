@@ -9,7 +9,7 @@ $
 - [x] Command line cheatsheet steps (setup for Node.js project)
 - [x] Create a folder called `"memes"`
 - [x] Set up a `.gitignore` with the `memes` folder
-- [ ] Access the website (send a request to the website / "fetching")
+- [x] Access the website (send a request to the website / "fetching")
 - [ ] Search for the `section` in the string of HTML that comes back (in the "response") from the website
 - [ ] Search for the first 10 image sources in the `section`
   - [ ] Two options
@@ -24,4 +24,4 @@ $
 - [ ] Test to make sure the program can run multiple times without failing
 
 string manipulation recearch
-parce the html recearch
+parser the html research
