@@ -1,6 +1,14 @@
 import { promises as fs } from 'node:fs';
 import parser from 'node-html-parser';
 
+await fs.mkdir('./memes', function (err) {
+  if (err) {
+    console.log(err);
+  } else {
+    console.log('New directory successfully created.');
+  }
+});
+
 const response = await fetch(
   'https://memegen-link-examples-upleveled.netlify.app/',
 );
