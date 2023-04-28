@@ -26,9 +26,13 @@ const downloadImage = async (url, path) => {
 
 for (let i = 0; i <= 9; i++) {
   const images = body[i].getAttribute('src');
-
   const number = 1;
+  let pathImage = `./memes/0${number + i}.jpg`;
+  if (pathImage === './memes/010.jpg') {
+    pathImage = './memes/10.jpg';
+  }
+
   console.log(images);
 
-  await downloadImage(images, `./memes/0${number + i}.jpg`);
+  await downloadImage(images, pathImage);
 }
